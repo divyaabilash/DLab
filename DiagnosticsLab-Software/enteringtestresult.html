@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>DiagnosticsLab</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/util.js"></script>
+</head>
+
+<body class="padding">
+    <header>
+        <div class="logo">
+            <img class="img" src="img/Icon.jpg">
+            <h1 class="header">Diagnostics Lab</h1>
+        </div>
+        <div class="buttons">
+            <a href="index.php">
+            <button class="button">Logout</button>
+        </a>
+           <!--  <a href="signup.html">
+                <button class="button secondary">Sign Up</button>
+            </a> -->
+        </div>
+    </header>
+    <section>
+    <section>
+        <div class="runner">
+        </div>
+    </section>
+    <section class="contents">
+        <nav class="navigation">
+            <ul>
+      
+                <li><a href="tech-viewhome.php">Home</li>
+                <li><a href="Registernewpatient.php">Register New Patient</a></li>
+                <li><a href="viewTestResult.php">View Test Result</a></li>
+                <li><a href="entertestresult.php">Enter Test Result</a></li>
+                <li><a href="CreatingTestCase.php">Order New Test</a></li>
+            </ul>
+        </nav>
+        <section class="techcontents">
+            <form>
+            <div class="divPadding">
+               <label> Patient ID:
+                <input type="text" name="PatientID" value="1" id="PatientID" readyonly></label>
+                </div>
+                <div class="divPadding">
+                <label> Report ID:
+                <input type="text" name="ReportID" value="1" readyonly></input></label>
+                </div>
+            </form>
+            <div style="clear: both;"></div>
+            <br>
+            <div id="words" class="words">
+                <h1>Test Report</h1>
+            </div>
+            <div class="table" >
+            <table style="width:80%">
+                <tr id="table1">
+                    <th>Test Names</th>
+                    <th>Test Values</th>
+                    <th>Normal Values</th>
+                </tr>
+                <tr>
+                    <td id="name">Haemoglobin</td>
+                    <td><input type="text" placeholder="normal value" id="test1"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue1" value="13.5-18g/dl"></td>
+                </tr>
+                <tr>
+                    <td>TC</td>
+                    <td><input type="text" placeholder="normal value" id="test2" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue2"value="4000-11000 cell/cumm" readonly></td>
+                </tr>
+                <tr>
+                    <td>Neutrophil</td>
+                    <td><input type="text" placeholder="normal value" id="test3" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue3" value="40-75%" readonly></td>
+                </tr>
+                <tr>
+                    <td>Lymphrocyte</td>
+                    <td><input type="text" placeholder="normal value" id="test4" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue4" value="20-50%" readonly></td>
+                </tr>
+                     <tr>
+                    <td>Monocyte</td>
+                    <td><input type="text" placeholder="normal value" id="test4" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue4" value="2-10%" readonly></td>
+                </tr>
+                     <tr>
+                    <td>Eosinobhil</td>
+                    <td><input type="text" placeholder="normal value" id="test4" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue4" value="1-6%" readonly></td>
+                </tr>
+                     <tr>
+                    <td>Basobhil</td>
+                    <td><input type="text" placeholder="normal value" id="test4" class="input"></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue4" value="0-1%" readonly></td>
+                </tr>
+            </table>
+        </div class="buttons">
+            <button type="button" class="buttont spacing">Reset</button>
+            <a href="patientView_4.php">
+            <button type="button" class="buttont spacing" >Preview</button></a>
+             <a href="entertestresult.php">
+             <button type="button" class="buttont spacing">Back</button></a>
+        </section>
+    </section>
+    <footer>
+        <p> Diagnostics Lab</p>
+    </footer>
+    <script>
+    $(document).ready(function(){
+     
+        document.getElementById("normalvalue1").value="13.5-18";
+    });
+
+    </script>
+    <script type="text/javascript" src="js/entertestResult.js"></script>
+</body>
+
+</html>

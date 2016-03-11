@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>DiagnosticsLab</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/util.js"></script>
+</head>
+
+<body class="padding">
+        <header>
+        <div class="logo">
+            <img class="img" src="img/Icon.jpg">
+            <h1 class="header">Diagnostics Lab</h1>
+        </div>
+        <div class="buttons">
+            <a href="index.php">
+            <button class="button">Logout</button>
+        </a>
+            <!-- <a href="signup.html">
+                <button class="button secondary">Sign Up</button>
+            </a> -->
+        </div>
+    </header>
+    <section>
+        <div class="runner">
+        </div>
+    </section>
+    <section class="contents">
+        <nav class="navigation">
+            <ul>
+                <li><a href="tech-viewhome.html">Home</li>
+<li><a href="Registernewpatient.html">Register New Patient</a></li>
+                <li><a href="viewTestResult.html">View Test Result</a></li>
+                <li><a href="entertestresult.html">Enter Test Result</a></li>
+                <li><a href="CreatingTestCase.html">Order New Test</a></li>
+            </ul>
+        </nav>
+        <section class="techcontents">
+            <form>
+            <label>
+                Patient ID:
+                <input type="text" name="PatientID" value="john" readonly></label>
+                <label> Report ID:
+                <input type="text" name="ReportID" value="xxxxuuu" readonly></input></label>
+                <br>
+            </form>
+            <div style="clear: both;"></div>
+            <br>
+            <div id="words">
+                <h1>Test Report</h1>
+            </div>
+            <div >
+            <table style="width:80%">
+                <tr id="table1">
+                    <th>Test Names</th>
+                    <th>Test Values</th>
+                    <th>Normal Values</th>
+                </tr>
+                <tr>
+                    <td>Test 1</td>
+                    <td><input type="text" placeholder="normal value" id="test1" class="input" readonly></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue1" class="input" readonly></td>
+                </tr>
+                <tr>
+                    <td>Test 2</td>
+                    <td><input type="text" placeholder="normal value" id="test2" class="input" readonly></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue2" class="input" readonly></td>
+                </tr>
+                <tr>
+                    <td>Test 3</td>
+                    <td><input type="text" placeholder="normal value" id="test3" class="input" readonly></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue3" class="input" readonly></td>
+                </tr>
+                <tr>
+                    <td>Test 4</td>
+                    <td><input type="text" placeholder="normal value" id="test4" class="input" readonly></td>
+                    <td><input type="text" placeholder="normal value" id="normalvalue4" class="input" readonly></td>
+                </tr>
+            </table>
+        </div class="buttons">
+            <button type="button" class="buttont spacing" onclick="window.history.go(-1); return false;">Back</button>
+            <button type="button" class="buttont spacing" >Download</button>
+        </section>
+    </section>
+    <footer>
+        <p> Diagnostics Lab</p>
+    </footer>
+</body>
+
+</html>

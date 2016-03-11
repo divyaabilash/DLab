@@ -1,0 +1,968 @@
+started template for all the pages*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 130px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    width: 370px;
+    margin: 10px;
+    float: left;
+    opacity: 0.7;
+}
+
+.logo img {
+    width: 103px;
+    height: 103px;
+    float: left;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+header .buttons {
+    position: absolute;
+    right: 5px;
+    bottom: 25px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.padding {
+    background: #FEFEFA;
+    color: black;
+    overflow-x: hidden;
+    margin: 0%;
+}
+
+.header {
+    background: -webkit-linear-gradient(#9C27B0, #00BCD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5%;
+    /*background: #FEFEFA;*/
+}
+.techcontents ul li{
+    padding:15px;
+    border-collapse: collapse;
+    width:500px;
+    border: 1px solid black;
+    background:#B2EBF2;
+}
+
+.loginfield{
+    text-align: right;
+}
+.loginfield label{
+    padding:10px;
+}
+.loginfield div{
+padding:10px;
+}
+
+#layouthidden{
+    padding:20px;
+}
+
+ .buttons {
+  position: relative;
+     float: right;
+     margin-top: -10%;
+     margin-left: 2%;
+     padding: 0% 6%;
+    font-size: 20px;
+     overflow: hidden;
+ }
+.button {
+    background: #00BCD4;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.button:hover{
+    background:#1B5E20;
+    color:#00E5FF;
+}
+
+.search{
+    background: transparent;
+}
+.search:hover{
+    background: #00BCD4;
+    border-radius: 25px;
+}
+.secondary {
+    background: #64B5F6;
+}
+
+.runner {
+    padding: 0.5% 0%;
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #9C27B0, #673AB7, #3F51B5, #00BCD4);
+}
+
+footer {
+    position: fixed;
+    right: 0%;
+    bottom: 0;
+    height: auto;
+    left: 0%;
+    width: 100%;
+    padding: 1%;
+    background: #009aaa;
+    text-align: center;
+    clear: both;
+}
+
+
+/*login.html classes*/
+
+.asideclass {
+    float: right;
+    display: inline;
+    width: 35%;
+}
+
+sup {
+    color: red;
+}
+
+.contents {
+    height: 100%;
+    position: relative;
+}
+
+aside div {
+    margin: 15px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 0px;
+}
+
+
+/*home.html*/
+
+.imagenav {
+    display: inline;
+    list-style-type: circle;
+    position: bottom;
+}
+
+
+/*signup.html*/
+
+.signup {
+    padding: 25px;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/pic3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.signup::after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.signup aside {
+    width: 45%;
+    float: left;
+    margin-bottom: 10%;
+    padding: 2%;
+}
+
+.signup .textbox {
+    width: 100%;
+    font-size: 16px;
+}
+
+.signup fieldset {
+    border-radius: 4px;
+    border-color: transparent;
+    /*border-color: #00BCD4;*/
+    background-color: white;
+    color: #1A237E;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.signup fieldset button {
+    background: #00BCD4;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+.main {
+    /*margin-top: 45%;*/
+    vertical-align: center;
+    float: right;
+    width: 45%;
+    color: white;
+    font-size: 150%;
+    padding: 1%;
+}
+
+.main div {
+    margin-top: 50%;
+}
+
+.signup sup {
+    color: red;
+}
+
+
+/*CreatingTestCase.html*/
+
+.navigation {
+    position: absolute;
+    align-items: center;
+    width: 20%;
+    float: left;
+    background: #00BCD4;
+    color: white;
+    left: 0;
+    margin-right: 15px;
+    top: 23.5%;
+    height: 100%;
+    vertical-align: middle;
+    bottom: 0;
+    min-height: 1200px;
+    scroll-behavior: auto;
+    z-index: -1;
+    min-width: 135px;
+    max-height: 5000px;
+    font-size: 20px;
+}
+#searchResult a{
+    color:black;
+}
+.addnav{
+    display: none;
+}
+
+.navigation li {
+    margin-bottom: 10%;
+    padding:10px 15px;
+    border-radius: 5px;
+}
+
+.navigation li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navigation li:hover{
+    background-color:#DCEDC8;
+    color: #0277BD;
+}
+
+.navigation li a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style-type: none;
+    position: absolute;
+    top: 15%;
+}
+
+.testcasedisplay {
+    height: 100%;
+    padding: 50%;
+}
+
+.techcontents {
+    float: right;
+    width: 75%;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    padding:60px;
+}
+
+.techcontents ul {
+    list-style-type: none;
+}
+
+.techcontents a {
+    text-decoration: none;
+    color:#212121;
+}
+.techcontents ul li:hover{
+    background:#00796B;
+  }
+
+/*for displaying error*/
+
+.error {
+    border-color: #ef5350;
+}
+
+.errortext {
+    color: #ef5350;
+}
+
+
+/*Cheng's code*/
+
+
+/*patient_dashboard classes*/
+
+.patient_dashboard a {
+    text-decoration: none;
+    color: #888;
+}
+
+.patient_dashboard .right {
+    width: 20%;
+    float: left;
+    display: inline;
+}
+
+.patient_dashboard .rights {
+    display: block;
+    padding: 15%;
+    margin: 3%;
+    box-shadow: 5px 5px 5px #888;
+    color: #888;
+    text-align: center;
+    font-family: 1.2em;
+}
+
+.patient_dashboard .menuChoice {
+    display: fixed;
+    display: block;
+}
+
+.patient_dashboard .menu {
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+}
+
+.patient_dashboard .menuChoice {
+    display: block;
+    padding: 7% 2% 7% 2%;
+    margin: auto;
+    border: 1% solid #B0E0E6;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 2em;
+}
+
+.patient_dashboard .report {
+    width: 60%;
+    float: left;
+    display: inline;
+}
+
+.patient_dashboard .reports {
+    display: block;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px #888;
+    background-color:
+}
+
+
+/*for patient View*/
+
+.patient_dashboard #reportTitle {
+    text-align: center;
+    width: 100%;
+}
+
+.patient_dashboard #reportContent {
+    box-shadow: 5px 5px 5px 5px #888;
+    float: left;
+    margin-left: 20%;
+    padding: 30%;
+}
+
+.patient_dashboard #back {
+    clear: both;
+    background-color: #888;
+    box-shadow: 1px 1px 1px 1px #FEFEFA;
+    padding: 1% 2% 1% 2%;
+    float: right;
+    margin-right: 20%;
+}
+
+.patient_dashboard #back a {
+    color: #FEFEFA;
+}
+
+#registerForm {
+    width: 60%;
+    margin-top: 1%;
+    text-align: right;
+}
+
+input {
+    height: 35px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #ccc;
+}
+
+.inputField {
+    margin-right: 20%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.inputBox {
+    margin: 1%;
+    border: solid 1px black;
+}
+
+.registerButton {
+    float: left;
+    margin-right: 10%;
+}
+
+#last {
+    margin-bottom: 5%;
+}
+
+#leftButton {
+    margin-left: 30%;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+    margin-top: 10%;
+    padding:20px;
+    border: 0.5px solid black;
+}
+
+th {
+    background-color: #00ACC1;
+    text-align: center;
+    padding: 20px;
+
+}
+
+td {
+    text-align: left;
+    padding: 20px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #00ACC1;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #B2EBF2
+}
+
+.tableDiv {
+    overflow: auto;
+    clear: both;
+}
+
+button {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /*padding: 10px 30px;*/
+    border-radius: 1px;
+    font-size: 14px;
+    /*margin-right: 10px;*/
+}
+
+
+/* reference http://codepen.io/Craigtut/pen/dIfzv */
+
+.ripple {
+    overflow: hidden;
+    float: right;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+    from {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+.container div {
+    display: inline-block;
+    width: 130px;
+    padding: 30%;
+}
+
+#reset {
+    float: left;
+}
+
+.paitentInfo {
+    float: left;
+}
+
+#testSearch {
+    margin: 8px;
+    width: 70%;
+}
+
+#patientID {
+    margin: 16px;
+    vertical-align: center;
+}
+
+#patientName {
+    margin: 16px;
+    vertical-align: center;
+}
+
+.buttont {
+    background: #00BCD4;
+    border: none;
+    color: white;
+    margin: 1px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.spacing {
+    padding: 1%;
+    margin: 5%;
+    float: left;
+    width: -1%;
+}
+
+.input {
+    padding: 5%;
+    border: none;
+    margin: 1%;
+}
+
+.newtable {
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 1%;
+    /*text-align: center;*/
+}
+
+.centeralign {
+    margin-left: 20%;
+}
+
+.selected {
+    background: #26A69A;
+    ;
+    color: #880E4F;
+}
+
+#lab-container { 
+  width: 91%; 
+  height: 90%;
+  overflow: hidden; margin: 4%;
+  border: solid 1px;
+  border-color: #E6E6E6 ;
+}
+
+/*.tiles{
+    width: 27%;
+    min-width: 100px;
+    margin: 3% ;
+    height: 200px;
+    background-color: #E6E6E6;
+    float: left;
+    margin-bottom: 80px;
+    text-align: center;
+}*/
+
+.tiles {
+    width: 28%;
+    float: left;
+    margin-right: 5px;
+    background-color:#00796B;
+    height: 205px;
+    margin-left: 43px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.tiles p {
+    font-size: 13px;
+    color: #FFF;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 8px 5px;
+    line-height: 18px;
+}
+
+.tiles h2 {
+    width: 100%;
+    padding: 6px 0px;
+    font-size: 18px;
+    color: #f8f582;
+    border-bottom: #aba8a8;
+    border-bottom-style: groove;
+    border-bottom-width: 1px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.login {
+    width: 30%;
+    float: right;
+    margin-top: 10%;
+    }
+
+/* mobiles Portrait and Landscape */
+
+@media only screen  and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    /*Header styles*/
+    header {
+        height: 100px;
+    }
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+    .logo h1 {
+        font-size: 18px
+    }
+    header .buttons {
+        right: 0;
+        bottom: 0;
+    }
+
+    /*Login page styles*/
+    .login {
+    width: 100%;
+    }
+    .main {
+        width:100%;
+    }
+    .signup {
+        background-size: 150%;
+    }
+    .info {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .asideclass {
+        float: none;
+    }
+    .asideclass label,
+    .asideclass input {
+        display: block;
+    }
+    .asideclass button {
+        margin-left: 15px;
+    }
+
+    .button{
+        padding: 6px;
+    }
+
+    /*Signup page*/
+    .signup .main {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        background-size: 160%
+    }
+
+    .signup .main div {
+        margin-top: 0;
+    }
+
+    .signup aside {
+        width: 100%;
+        float: none;
+    }
+
+    .signup aside div {
+        margin: 10px;
+    }
+
+    .signup fieldset {
+        margin: 0;  
+        padding: 0; 
+    }
+
+    .navigation{
+        visibility: hidden;
+    }
+    .techcontents{
+         margin-left: -28%;
+    }
+    .paitentInfo{
+         margin-left: -28%;
+         font-size: 14px;
+    }
+    .buttonContainer{
+        margin-top: 25px;
+        margin-left: -40px;
+    }
+    .tableDiv{
+        margin-left: -100px;
+    max-width: 300px;
+    text-align: left;
+    }
+th,td{
+    text-align: left;
+}
+form{
+        margin-left: -28px;
+    font-size: 15px;
+}
+.divPadding{
+    margin-top: 20px;   
+}
+    .words h1{
+    margin-left: -45px;
+}
+
+.table{
+    margin-left: -22%;
+    max-width: 70%;
+}
+div::after{
+    clear: both;
+}
+.searchtab label{
+    clear: both;
+        margin: -78px;
+    font-size: 12px;
+
+}
+label{
+    text-align: right;
+}
+#id label{
+        padding: 20px;
+}
+.inputField {
+    font-size: 11px;
+}
+#registerForm {
+   text-align: left; 
+}
+
+.addnav{
+      clear: both;
+    padding: 5px;
+    margin:10px 0px 0px 0px;
+    background: #00BCD4;
+    color: white;
+}
+.addnav::after{
+    clear: both;
+}
+.reportListItem {
+    list-style-type: none;
+    border: 1px solid black;
+}
+}
+
+@media only screen and (max-device-width:768px) {
+    .inputField {
+    margin-left: 20%;
+}
+.tiles {
+    width:100%;
+    margin-left:0;
+}
+}
+/*@media only screen and (min-device-width:384px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2)
+{*/
+        /*Header styles
+    header {
+        height: 100px;
+    }
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+    .logo h1 {
+        font-size: 18px
+    }
+    header .buttons {
+        right: 0;
+        bottom: 0;
+    }
+
+    /*Login page styles*/
+   /* .login {
+    width: 100%;
+    }
+    .main {
+        width:100%;
+    }
+    .signup {
+        background-size: 150%;
+    }
+    .info {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .asideclass {
+        float: none;
+    }
+    .asideclass label,
+    .asideclass input {
+        display: block;
+    }
+    .asideclass button {
+        margin-left: 15px;
+    }
+
+    .button{
+        padding: 6px;
+    }
+
+    /*Signup page*/
+    /*.signup .main {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        background-size: 160%
+    }
+
+    .signup .main div {
+        margin-top: 0;
+    }
+
+    .signup aside {
+        width: 100%;
+        float: none;
+    }
+
+    .signup aside div {
+        margin: 10px;
+    }
+
+    .signup fieldset {
+        margin: 0;  
+        padding: 0; 
+    }
+
+    .navigation{
+        visibility: hidden;
+    }
+    .techcontents{
+         margin-left: -28%;
+    }
+    .paitentInfo{
+         margin-left: -28%;
+         font-size: 14px;
+    }
+    .buttonContainer{
+        margin-top: 25px;
+        margin-left: -40px;
+    }
+    .tableDiv{
+        margin-left: -100px;
+    max-width: 300px;
+    text-align: left;
+    }
+th,td{
+    text-align: left;
+}
+form{
+        margin-left: -28px;
+    font-size: 15px;
+}
+.divPadding{
+    margin-top: 20px;   
+}
+    .words h1{
+    margin-left: -45px;
+}
+
+.table{
+    margin-left: -22%;
+    max-width: 70%;
+}
+div::after{
+    clear: both;
+}
+.searchtab label{
+    clear: both;
+        margin: -78px;
+    font-size: 12px;
+
+}
+label{
+    text-align: right;
+}
+#id label{
+        padding: 20px;
+}
+
+
+.addnav{
+      clear: both;
+    padding: 5px;
+    margin:10px 0px 0px 0px;
+    background: #00BCD4;
+    color: white;
+}
+.addnav::after{
+    clear: both;
+}*/
+/*}*/

@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>DiagnosticsLab</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="padding">
+ <header>
+        <div class="logo">
+            <img class="img" src="img/Icon.jpg">
+            <h1 class="header">Diagnostics Lab</h1>
+        </div>
+        <div class="buttons">
+        <a href="login.php">
+            <button class="button">Login</button>
+        </a>
+            <a href="index.php">
+                <button class="button secondary">Home</button>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="runner">
+        </div>
+    </section>
+    <section class="signup">
+        <section class="main">
+            <div> Its Always good to stay connected and know whats happening inside you!</div>
+        </section>
+        <aside>
+            <form action="php/userRegistration.php" method="post">
+                <fieldset>
+                    <div class="signlegend">
+                        <div>
+                            <div id="error" class="errortext"></div>
+                            <label>Id<sup>*</sup>
+                            <br>
+                            <input type="text" name="id" id="id" placeholder="Enter Your Id " class="textbox" required /></label>
+                        </div>
+                        <div>
+                            <label>Name<sup>*</sup>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="John" class="textbox" required /></label>
+                        </div>
+                        <div>
+                            <label>User Name<sup>*</sup>
+                            <br>
+                            <input type="text" name="username" id="username" placeholder="username" class="textbox" required/></label>
+                        </div>
+                        <div>
+                            <label>Password<sup>*</sup>
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Password" class="textbox" required/>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Confirm Password<sup>*</sup>
+                            <br>
+                            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirmpassword" class="textbox" onblur="comparePassword()" required />
+                            </label>
+                        </div>
+                        <div>
+                            <label>Email ID<sup>*</sup>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="example@domain.com" class="textbox" required/></label>
+                        </div>
+                        <div>
+                            <label>Phone Number<sup>*</sup>
+                            <br>
+                            <input type="number" name="phonenumber" id="phonenumber" placeholder="xxx-xxx xxxx" class="textbox" required/></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="selection" id="techn">Tech</input>
+                            <input type="radio" name="selection" id="patient" checked>Patient</input>
+                        </div>
+                        <div>
+                            <button type="submit" onclick="getchecked()">Sign Up</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </aside>
+    </section>
+    <footer>
+        <p> Diagnostics Lab</p>
+    </footer>
+
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</body>
+
+</html>
